@@ -3,14 +3,16 @@ const mongoose = require('mongoose');
 const BookData = require('./src/model/Bookdata');
 const UserData = require('./src/model/Userdata');
 const cors = require('cors');
-const path = require('path');
-app.use(express.static('./dist/front-end'));
+
 //var bodyparser=require('body-parser');
 const jwt = require('jsonwebtoken')
 var app = new express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cors());
+
+const path = require('path');
+app.use(express.static('./dist/front-end'));
 //app.use(bodyparser.json());
 //username='admin';
 //password='1234';
