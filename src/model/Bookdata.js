@@ -4,7 +4,7 @@ mongoose.connect(`mongodb+srv://dinusha:dinusha12345@cluster0.apqzh.mongodb.net/
 const Schema = mongoose.Schema;
 
 var NewBookSchema = new Schema({
-    bookId : Number,
+    bookId : String,
     bookName : String,
     Author : String,
     description : String,
